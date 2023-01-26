@@ -1,0 +1,725 @@
+$blue: #3d37f1;
+$secondry-color: #5a5454;
+$blue-shadow: #3d37f142;
+$bg-color: #fbfcfd;
+$bgSecond: #f8f8f8;
+$orange: #ff8923;
+$mbox-service: 25px;
+$p-color: #747474;
+$li-color: #969ca2;
+$blur-box-service: 1rem;
+$redius-succes: 30px;
+$min-large: (
+  min-width: 992px,
+  );
+  $max-large: (
+    max-width: 1199px,
+    );
+    $max-medium: (
+      max-width: 991px,
+    );
+$min-md: (
+  min-width: 768px,
+);
+$max-sm: (
+  max-width: 767px,
+);
+$min-sm: (
+  min-width:576px,
+);
+$max-xsm: (
+  max-width:575px,
+);
+.colorp {
+  color: $p-color;
+  margin: auto;
+}
+body {
+  font-family: Lato;
+  overflow-x: hidden;
+}
+.blueButton {
+  background-color: $blue;
+  border-radius: 30px;
+  border-width: 0px;
+  color: white;
+  img {
+    width: 20%;
+  }
+  &:hover {
+    box-shadow: 0px 10px 20px $blue-shadow, 0px -10px 20px $blue-shadow;
+  }
+}
+/******************* Start NAV-BAR**********/
+.navbar {
+  .container {
+    .collapse {
+      position: relative;
+     
+      .nav-img {
+        @media #{$min-large} {
+          position: absolute;
+          left: 13%;
+          top: -40px;
+          right: -25%;
+          z-index: -1;
+        }
+        img {
+          @media #{$max-medium} {
+            display: none;
+          }
+        }
+      }
+
+      .navbar-nav {
+        
+        @media #{$min-large} {
+          padding-left: 200px;
+          padding-top: 30px;
+          color: white;
+        }
+
+        .nav-item {
+          font-family: Lato;
+          padding-left: 10px;
+
+          .nav-link {
+            font-size: 14px;
+            color: white;
+            @media #{$max-medium} {
+              color: $secondry-color;
+            }
+            &:hover,:active{
+              color: $orange;
+            }
+          }
+        }
+      }
+      .log {
+        .btn {
+          background-color: $orange;
+          // margin-left: 40px;
+          color: white;
+          border-radius: 30px;
+          &:hover {
+            box-shadow: 0px 5px 15px rgba(238, 120, 10, 0.507);
+          }
+        }
+      }
+    }
+  }
+}
+/******************* End  NAV-BAR**********/
+
+/*********************HERO***********/
+.hero {
+  margin-top: 170px;
+  padding-left: 120px;
+  @media #{$max-large} {
+    padding-left: 80px;
+    margin-top: 120px;
+   }
+  @media #{$max-medium} {
+    padding-top: 50px;
+    padding-left:70px;
+    margin-top:20px;
+   }
+  
+  @media #{$max-sm} {
+margin: auto;
+padding-left: 1%;
+padding-right: 1%;
+
+  }
+  .container {
+    .info-hero {
+      vertical-align: middle;
+      h1 {
+        font-size: 60px;
+        @media #{$max-large} {
+         font-size: 40px;
+        }
+        @media #{$max-medium} {
+         font-size: 30px;
+        }
+        @media #{$max-xsm} {
+         font-size:20px;
+        }
+      }
+    }
+    .img-hero{
+     margin-right: 120px;
+    
+    }
+    
+  }
+}
+
+/**********service***********/
+.service {
+  background-color: $bg-color;
+  margin-top: 50px;
+  padding: 30px;
+
+  .container {
+    h5 {
+      color: $blue;
+    }
+    .mainP {
+      @media #{$min-large} {
+        width: 49%; 
+      }
+     
+    }
+    .row {
+      color: white;
+      font-size: 14px;
+      font-weight: normal;
+      button {
+        height: 45px;
+        width: 130px;
+        background-color: transparent;
+        border: solid 2px white;
+        border-radius: 30px;
+        color: white;
+        font-size: 16px;
+        font-weight: normal;
+        margin-top: 10px;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+      img {
+        margin-bottom: 60px;
+      }
+      div {
+        padding: 80px 20px 50px;
+      }
+      .box-serviceF {
+        background-image: linear-gradient(to bottom, #fbba77, #dfa871);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #dfa871;
+        }
+      }
+      .box-serviceS {
+        background-image: linear-gradient(to bottom, #41eae3, #2293b7);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #2293b7;
+        }
+      }
+      .box-serviceTh {
+        background-image: linear-gradient(to bottom, #69529f, #463864);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #463864;
+        }
+      }
+      .box-serviceFo {
+        background-image: linear-gradient(to bottom, #4386d2, #0962c5);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #0962c5;
+        }
+      }
+      .box-serviceFi {
+        background-image: linear-gradient(to bottom, #a5a2f6, #564fd6);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #564fd6;
+        }
+      }
+      .box-serviceSi {
+        background-image: linear-gradient(to bottom, #ff8088, #984141);
+        margin: $mbox-service;
+        &:hover {
+          box-shadow: 0px 0.5rem $blur-box-service #984141;
+        }
+      }
+    }
+  }
+}
+
+/*********************UI EXPERT****************/
+.ui {
+  .ui-img {
+    img {
+      width: 90%;
+    }
+  }
+  .ui-info {
+    p {
+     
+      @media #{$min-md} {
+        margin-left: 0px;
+        width: 65%;
+       }
+      @media #{$max-sm} {
+        margin: auto;
+       }
+
+    }
+    div {
+      @media #{$max-sm} {
+         
+        margin-inline: auto;
+       
+      }
+     
+      i {
+       
+      text-align: left;  
+        font-size: 40px;
+        color: $blue;
+        @media #{$max-sm} {
+         
+         
+        }
+        
+        &:hover{
+          cursor: pointer;
+        }
+      }
+
+      h4 {
+        font-weight: lighter;
+        padding-left: 20px;
+        
+      }
+    }
+  }
+}
+
+/*--------START Our portfolio----------*/
+.portfolio {
+  background-color: $bgSecond;
+  .container {
+    .row {
+      .portfolio-info {
+        color: $secondry-color;
+        h5 {
+          padding-top: 20px;
+          border-bottom: 2px solid $blue;
+          color: $blue;
+          width: 198px;
+        }
+        li {
+          color: #969ca2;
+          font-weight: bold;
+          padding-top: 30px;
+          @media #{$max-sm} {
+            padding-right: 30px;
+          }
+        }
+       
+        }
+       
+      }
+    }
+  }
+
+
+/*--------END Our portfolio----------*/
+/*--------START  Our Success----------*/
+.our-success {
+  color: $secondry-color;
+  .container {
+    .row{
+      div {
+        color: white;
+
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border-radius: $redius-succes;
+        width: 300px;
+        height: 300px;
+        p {
+          font-size: 12px;
+          color: #4b647e;
+          font-weight: bold;
+          padding-top: 15px;
+        }
+        &:first-of-type {
+          h1 {
+            box-shadow: 0 30px 30px -5px #6751f350, 0 15px 15px -5px #6751f360;
+            background-image: linear-gradient(135deg, #af94fd, #6651f3);
+            padding: 25% 22.5% 25% 22.5%;
+            margin-inline: 15%;
+            border-radius: $redius-succes;
+          }
+        }
+        &:nth-of-type(2) {
+          h1 {
+            box-shadow: 0 30px 30px -5px #ff62a340, 0 15px 15px -5px #ff62a360;
+            background-image: linear-gradient(135deg, #ff95a5, #ff62a3);
+            padding: 25% 22.5% 25% 22.5%;
+            margin-inline: 15%;
+            border-radius: $redius-succes;
+          }
+        }
+        &:last-of-type {
+          h1 {
+            box-shadow: 0 30px 30px -5px #ff894a46, 0 15px 15px -5px #ff894a63;
+            background-image: linear-gradient(135deg, #fbc9a4, #ff884a);
+            padding: 25% 22.5% 25% 22.5%;
+            margin-inline: 15%;
+            border-radius: $redius-succes;
+          }
+        }
+      }
+    }
+  }
+}
+/*--------END Our Our Success----------*/
+/*-------START Review----------*/
+
+.review {
+  background-color: #0c0f32;
+  color: white;
+  p {
+    opacity: 0.24;
+  }
+
+  .container {
+    .img-rev {
+      position: relative;
+      height: 600px;
+      @media #{$max-xsm} {
+        
+       height: 650px;
+          
+        }
+
+      .six {
+        width: 70px;
+        height: 70px;
+      }
+
+      .img-what {
+        img {
+          width: 75%;
+          opacity: 0.305;
+          filter: blur(3px);
+          &:hover {
+            opacity: 1;
+            transform: scale(2);
+            filter: blur(0px);
+          }
+          
+        }
+       
+      }
+      .six{
+        img{
+          opacity: 1;
+            transform: scale(2);
+            filter: blur(0px);
+        }
+      }
+      .what-say {
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: 20%;
+        right: 20%;
+        @media #{$max-medium} {
+        position: static;
+        padding-bottom: 80px;
+          
+        }
+       
+        p {
+          opacity: 1;
+          width: 460px;
+          margin: auto;
+          @media (max-width:660px) {
+            width: 300px;
+          }
+        }
+        h4 {
+          color: $blue;
+         
+        }
+      }
+    }
+    .foot-rev {
+      
+      border-top: solid 1px rgba(255, 255, 255, 0.24);
+      div {
+        button {
+          @extend .blueButton;
+          @media #{$max-xsm} {
+         padding: 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+               
+             }
+        }
+        h2{
+          @media #{$max-xsm} {
+        
+            font-size: 16px;
+               
+             }
+        }
+      }
+    }
+  }
+}
+
+/*--------END Review----------*/
+
+/*--------START Feature----------*/
+.feature {
+  .container {
+    .design {
+      position: relative;
+
+      .overlaye {
+        
+        position: absolute;
+        border-radius: 5%;
+        background-color: #131c7cd0;
+        left: 10px;
+        top: 0px;
+        right: 10px;
+        bottom: 0px;
+        color: white;
+        padding-left: 20%;
+        padding-top: 20%;
+
+        img {
+          width: 25%;
+          margin-top: 10px;
+        }
+        h2 {
+          font-weight: bold;
+          padding-top: 20px;
+        }
+        p {
+          opacity: 0.705;
+          width: 150px;
+        }
+      }
+      &:nth-of-type(2) {
+        .overlaye {
+          background-color: #f56e1fd0;
+        }
+      }
+      &:nth-of-type(3) {
+        .overlaye {
+          background-color: #a5a2f6d0;
+        }
+      }
+    }
+  }
+}
+
+/*--------END Feature----------*/
+/*--------Start  Workflow----------*/
+.Workflow {
+  .container {
+   
+    .Workflow-info {
+      h5{
+        @media #{$max-xsm} {
+        
+          font-size: 16px;
+         
+             
+           }
+      }
+    
+      div {
+        padding-bottom: 20px;
+        position: relative;
+        &::before {
+          content: '01';
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          background-color: $blue;
+          padding: 20px 23px;
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }
+        h3 {
+          padding-left: 90px;
+        }
+        h6 {
+          padding-left: 90px;
+          width: 247px;
+        }
+        &:nth-of-type(2) {
+          &::before {
+            content: '02';
+            background-color: #9997df;
+          }
+        }
+        &:nth-of-type(3) {
+          &::before {
+            content: '03';
+            background-color: #ffba3f;
+          }
+        }
+        &:nth-of-type(4) {
+          &::before {
+            content: '04';
+            background-color: #E66E6E;
+          }
+        }
+        &:nth-of-type(5) {
+          &::before {
+            content: '05';
+            background-color: #66659F;
+          }
+        }
+        &:nth-of-type(6) {
+          &::before {
+            content: '06';
+            background-color: #F17637;
+          }
+        }
+        &:nth-of-type(7) {
+          &::before {
+            content: '07';
+            background-color: #37F1BE;
+          }
+        }
+        &:nth-of-type(8) {
+          &::before {
+            content: '08';
+            background-color: #F137E5;
+          }
+        }
+        &:nth-of-type(9) {
+          &::before {
+            content: '09';
+            background-color: #F13D37;
+          }
+        }
+       
+      }
+      @media #{$max-xsm} {
+        
+        margin-left: 30px;   
+         }
+    }
+  }
+}
+
+/*--------  END  Workflow----------*/
+
+/*--------  START   Our Blog ----------*/
+.Our-Blog{
+  p{
+    width: 480px;
+    color: $p-color;
+   
+    @media #{$max-sm} {
+        width: 98%;  
+       }
+  }
+  background-color: $bg-color;
+  .blog-card{
+    margin: auto;
+   .card-img{
+     &:nth-of-type(1){
+      padding-bottom: 35px;
+     }
+     &:nth-of-type(2){
+      padding-bottom: 10px;
+     }
+     
+   }
+    .blog-card-body,img{
+
+    
+    background-color: white;
+  
+    
+  img{
+    height: 26px;
+  }}
+  &:hover{
+    box-shadow:  0 .125rem .25rem rgba(black, .075);;
+  }
+  }
+  .blog-card-text{
+    width: 99%;
+    @media #{$max-xsm} {
+      font-size: 14px;
+     } 
+  }
+  .blog-card-title{
+    @media #{$max-xsm} {
+      font-size: 16px;
+     } 
+  }
+ 
+}
+/*--------  END  Our Blog ----------*/
+.mainSlider{
+  background-color: $bg-color;
+  .item{
+   
+    @media (max-width:600px) {
+      padding-left: 20%;
+     }
+  }}
+
+
+/*--------  START  Footer----------*/
+footer{
+  .container{
+    color: #0A315A;
+    
+    div{
+      h3{
+        color: $p-color;
+      }
+      ul{
+        li{
+          padding: 8px 0px;
+        }
+      }
+      
+        
+      
+      p{
+        color: $p-color;
+      }
+    }
+    .footer-colm{
+      i{
+        color:white;
+        background-color: #0A315A;
+        padding: 12px;
+        border-radius: 50%;
+        margin-right: 10px;
+        &:hover{
+          cursor: pointer;
+        }
+
+      }}
+      .icon{
+        i{
+          color: #4B647E;
+        span{
+          padding-left: 20px;
+          font-weight: normal;
+        }
+        }
+      }
+    h6{
+      color:$li-color;
+    }
+  }
+}
+
+/*--------  END Footer----------*/
